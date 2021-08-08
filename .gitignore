@@ -149,3 +149,6 @@ Desktop.ini
 /billing/
 
 ./target/
+target/
+logs/
+log/
