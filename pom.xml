@@ -7,6 +7,10 @@
     <groupId>com.duannd</groupId>
     <artifactId>tutorials-spring</artifactId>
     <version>1.0</version>
+    <modules>
+        <module>spring-data-jpa-h2</module>
+        <module>getting-started</module>
+    </modules>
     <packaging>pom</packaging>
 
 
