@@ -5,7 +5,11 @@
 
    Documentation: **[Getting Started](./getting-started/README.md)**
 
-# Spring Data JPA
+## Spring Application
+
+   Read more **[Spring Application](./spring-application/README.md)**
+
+## Spring Data JPA
 
 1. Spring Data JPA with H2
 
