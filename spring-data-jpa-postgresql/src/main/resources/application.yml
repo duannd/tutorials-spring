@@ -1,0 +1,38 @@
+# Main configuration
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+# Datasource config
+---
+spring:
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: deferred
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5433/testdb
+    username: postgres
+    password: postgres
+    hikari:
+      pool-name: Hikari
+      auto-commit: false
+      connection-timeout: 30000 # maximum number of milliseconds that a client will wait for a connection
+      idle-timeout: 600000 # maximum amount of time that a connection is allowed to sit idle in the pool.
+      max-lifetime: 1800000 # maximum lifetime in milliseconds of a connection in the pool after it is closed.
+      minimum-idle: 10 # minimum number of idle connections that HikariCP tries to maintain in the pool. Default: same as maximumPoolSize
+      maximum-pool-size: 10 # maximum size that the pool is allowed to reach, including both idle and in-use connections.
+  jpa:
+    # database-platform:
+    open-in-view: false
+    properties:
+      hibernate.jdbc.time_zone: UTC
+      hibernate.id.new_generator_mappings: true
+      hibernate.connection.provider_disables_autocommit: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+

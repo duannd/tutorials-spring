@@ -14,3 +14,7 @@
 1. Spring Data JPA with H2
 
     Link to **[Spring Data JPA with H2](./spring-data-jpa-h2/README.md)**
+
+2. Spring Data JPA with postgresql
+
+   Link to **[Spring Data JPA with Postgresql](./spring-data-jpa-postgresql/README.md)**
